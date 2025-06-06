@@ -52,8 +52,8 @@ class Cancion:
     def setEstado(self, estado):
         self.estado = estado
 
-    def setEnviadorPor(self, enviado_por):
-        self.enviador_por = enviado_por
+    def setEnviadoPor(self, enviado_por):
+        self.enviado_por = enviado_por
 
     def setFechaEnvio(self, fecha_envio):
         self.fecha_envio = fecha_envio

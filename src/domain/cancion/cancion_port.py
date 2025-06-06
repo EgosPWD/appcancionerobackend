@@ -5,20 +5,20 @@ from domain.cancion.cancion import Cancion
 class CancionPort(ABC):
     @abstractmethod
     def get_cancion(self, id_cancion: int) -> Cancion:
-        """Retrieve a song by its ID."""
+        """Obtener una canción por su ID."""
         pass
 
     @abstractmethod
     def get_all_canciones(self) -> list[Cancion]:
-        """Retrieve all songs."""
+        """Obtener todas las canciones."""
         pass
 
     @abstractmethod
     def save_cancion(self, cancion: Cancion) -> None:
-        """Save a song."""
+        """Guardar una canción."""
         pass
 
     @abstractmethod
     def delete_cancion(self, id_cancion: int) -> None:
-        """Delete a song by its ID."""
+        """Eliminar una canción por su ID."""
         pass

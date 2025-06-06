@@ -20,7 +20,7 @@ class CancionAdapter(CancionPort):
                 letra=data['letra'],
                 id_tipo=data['id_tipo'],
                 estado=data['estado'],
-                enviado_por=data['enviador_por'],
+                enviado_por=data['enviado_por'],
                 fecha_envio=data['fecha_envio']
             )
         return None

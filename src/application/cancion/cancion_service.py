@@ -6,17 +6,17 @@ class CancionService:
         self.cancion_port = cancion_port
 
     def get_cancion(self, id_cancion: int) -> Cancion:
-        """Retrieve a song by its ID."""
+        """Obtener una canción por su ID."""
         return self.cancion_port.get_cancion(id_cancion)
 
     def get_all_canciones(self) -> list[Cancion]:
-        """Retrieve all songs."""
+        """Obtener todas las canciones."""
         return self.cancion_port.get_all_canciones()
 
     def save_cancion(self, cancion: Cancion) -> None:
-        """Save a song."""
+        """Guardar una canción."""
         self.cancion_port.save_cancion(cancion)
 
     def delete_cancion(self, id_cancion: int) -> None:
-        """Delete a song by its ID."""
+        """Eliminar una canción por su ID."""
         self.cancion_port.delete_cancion(id_cancion)

@@ -4,8 +4,8 @@ from supabase import create_client, Client
 
 load_dotenv(os.path.join(os.path.dirname(__file__), '..', '..', '.env'))
 
-url = os.getenv("EXPO_PUBLIC_SUPABASE_URL")
-key = os.getenv("EXPO_PUBLIC_SUPABASE_ANON_KEY")
+url = os.getenv("SUPABASE_URL")
+key = os.getenv("SUPABASE_KEY")
 
 supabase: Client | None = None 
 def get_connection() -> Client:
