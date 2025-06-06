@@ -14,7 +14,7 @@ class CancionPort(ABC):
         pass
 
     @abstractmethod
-    def save_cancion(self, cancion: Cancion) -> None:
+    def save_cancion(self, cancion: Cancion) -> Cancion:
         """Guardar una canción."""
         pass
 
